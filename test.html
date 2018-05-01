@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="txt">
+    <input type="button" id="btn" value="Sum">
+<script>
+    var sum = 0;
+    var numbers = [];
+    function Summa()
+    {
+        var str = Array.from(document.getElementById("txt").value);
+        for(var i = 0; i < str.length; i++)
+        {
+        numbers[i] = Number(str[i]);
+        sum = sum + numbers[i];
+        }
+        document.write("summa = " , sum);
+    }
+    document.getElementById("btn").onclick = Summa;
+</script>
+</body>
+</html>
